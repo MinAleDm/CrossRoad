@@ -1,40 +1,61 @@
-# Перекресток 🚦
+# CrossRoad
 
-Добро пожаловать в проект "Перекресток"! Этот веб-сервис предназначен для создания обсуждений и публикации статей. Он предоставляет пользователям возможность делиться своими мыслями, опытом и знаниями, а также взаимодействовать с другими участниками сообщества.
+[![Deploy CrossRoad to GitHub Pages](https://github.com/MinAleDm/CrossRoad/actions/workflows/deploy-pages.yml/badge.svg)](https://github.com/MinAleDm/CrossRoad/actions/workflows/deploy-pages.yml)
+[![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-online-1f8f4f?logo=github)](https://minaledm.github.io/CrossRoad/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-1f8f4f.svg)](LICENSE)
 
-## Описание
+`CrossRoad` - учебный проект платформы для статей и дискуссий в формате чистого frontend-прототипа.
 
-"Перекресток" — это платформа, где пользователи могут создавать обсуждения, задавать вопросы и публиковать статьи на интересующие их темы. Проект нацелен на создание активного сообщества, где каждый может выразить свое мнение и получить feedback.
+## Что сделано
 
-## Функциональные возможности
+- Полностью удален legacy/неиспользуемый код
+- Оставлен только актуальный стек: `React + TypeScript + Vite`
+- Упрощена и выровнена структура репозитория
+- Сохранен автодеплой на GitHub Pages
 
-- Регистрация и аутентификация пользователей
-- Создание, редактирование и удаление статей и обсуждений
-- Комментирование и обсуждение статей
-- Поиск статей по ключевым словам и категориям
-- Личный кабинет пользователя
+## Структура проекта
 
-## Технологии
+```text
+CrossRoad/
+  .github/workflows/deploy-pages.yml
+  docs/
+  public/
+  src/
+  index.html
+  package.json
+  tsconfig.json
+  vite.config.ts
+  README.md
+```
 
-В разработке проекта используются следующие технологии:
+## Быстрый старт
 
-- Frontend: HTML, CSS, JavaScript (React.js)
-- Backend: Node.js, Express
-- База данных: MySQL
-- Авторизация: JWT
+```bash
+npm install
+npm run dev
+```
 
-## Совместная работа
+## Сборка
 
-Если вы хотите внести свой вклад в проект, пожалуйста, создайте новый issue или сделайте pull request. Будем рады вашим идеям, отзывам и предложениям!
+```bash
+npm run build
+npm run preview
+```
 
-## Лицензия
+## Деплой на GitHub Pages
 
-Техническая часть находиться под лицензией MIT. Контент регламентируется лицензией CC-BY-NC-SA-4.0. Для подробной информации смотрите файл LICENSE и CC-BY-NC-SA-4.0.
+Workflow деплоя: [./.github/workflows/deploy-pages.yml](./.github/workflows/deploy-pages.yml)
 
-## Контакты
+Подробные шаги: [docs/DEPLOYMENT.md](docs/DEPLOYMENT.md)
 
-Если у вас есть вопросы или предложения, свяжитесь с нами.
+## Документация
 
-Спасибо за интерес к Веб-Сервису "Перекресток"! Надеемся, вам понравится использовать наш сервис и участвовать в обсуждениях.
+- [Архитектура прототипа](docs/ARCHITECTURE.md)
+- [Деплой](docs/DEPLOYMENT.md)
+- [Дорожная карта](docs/ROADMAP.md)
+- [Индекс документации](docs/README.md)
 
+## Лицензии
 
+- Код: [MIT](LICENSE)
+- Контент: [CC-BY-NC-SA-4.0](CC-BY-NC-SA-4.0)

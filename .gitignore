@@ -1,0 +1,13 @@
+# Dependencies / build
+node_modules/
+dist/
+.vite/
+*.tsbuildinfo
+
+# IDE
+.idea/
+*.iml
+
+# Logs / OS
+*.log
+.DS_Store
